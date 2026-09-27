@@ -20,3 +20,14 @@ debug.sf.disable_hwc1=1
 # Silencia o aviso de Vendor Outdated
 ro.vendor.build.fingerprint=lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/1403164001:user/release-keys
 ro.vendor.build.security_patch=2021-10-05
+
+
+# --- Otimizacao de I/O para eMMC antigo ---
+# Evita que o sistema tente compilar tudo no boot (causa travamento de thread)
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=interpret-only
+pm.dexopt.install=interpret-only
+pm.dexopt.bg-dexopt=verify
+
+# Desativa analise de midia em segundo plano que trava o disco
+persist.sys.media.use_default_extractor=1
