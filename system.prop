@@ -1,2 +1,22 @@
 # No RIL
 ro.radio.noril=true
+
+# ==========================================
+# Otimizacoes para evitar crashes (1GB RAM)
+# ==========================================
+
+# Ajuste estrito da VM Dalvik/ART para 1GB de RAM
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapgrowthlimit=96m
+dalvik.vm.heapsize=128m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
+# Estabilidade Grafica (Evita crashes do SurfaceFlinger/HWC antigo)
+debug.sf.enable_gl_client_composition=1
+debug.sf.disable_hwc1=1
+
+# Silencia o aviso de Vendor Outdated
+ro.vendor.build.fingerprint=lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/1403164001:user/release-keys
+ro.vendor.build.security_patch=2021-10-05
