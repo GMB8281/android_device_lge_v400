@@ -32,3 +32,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # common v4xx
 $(call inherit-product, device/lge/v4xx-common/v4xx.mk)
+
+# Copia o script de logcat para o ramdisk
+PRODUCT_COPY_FILES += \
+    device/lge/v4xx-common/rootdir/etc/init.logcat.rc:root/init.logcat.rc
