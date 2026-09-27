@@ -21,6 +21,10 @@ debug.sf.disable_hwc1=1
 ro.vendor.build.fingerprint=lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/1403164001:user/release-keys
 ro.vendor.build.security_patch=2021-10-05
 
+# Desativa features que usam pipes extras do MDP
+persist.hwc.mdpcomp.enable=true
+persist.hwc.mdpcomp.maxpermixer=2
+debug.sf.disable_backpressure=1
 
 # --- Otimizacao de I/O para eMMC antigo ---
 # Evita que o sistema tente compilar tudo no boot (causa travamento de thread)
