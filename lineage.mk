@@ -10,4 +10,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="e7wifi" \
     BUILD_FINGERPRINT="lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/1403164001:user/release-keys" \
     PRIVATE_BUILD_DESC="e7wifi_open_com-user 4.4.2 KOT49I.A1403164001 1403164001 release-keys"
-    device/lge/v4xx-common/rootdir/etc/init.logcat.rc:root/init.logcat.rc
