@@ -1,57 +1,6 @@
 # No RIL
 ro.radio.noril=true
 
-# Desativa camera completamente
-config.disable_cameraservice=true
-
-# Desativa AudioFx
-ro.audiofx.enabled=false
-
-# Desativa o watchdog (APENAS PARA DIAGNOSTICO)
-ro.build.watchdog.timeout=0
-persist.sys.watchdog_disabled=true
-
-# ==========================================
-# Otimizacoes para evitar crashes (1GB RAM)
-# ==========================================
-
-# Ajuste estrito da VM Dalvik/ART para 1GB de RAM
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heapgrowthlimit=96m
-dalvik.vm.heapsize=128m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapmaxfree=8m
-
-# Estabilidade Grafica (Evita crashes do SurfaceFlinger/HWC antigo)
-debug.sf.enable_gl_client_composition=1
-debug.sf.disable_hwc1=1
-
 # Silencia o aviso de Vendor Outdated
 ro.vendor.build.fingerprint=lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/1403164001:user/release-keys
 ro.vendor.build.security_patch=2021-10-05
-
-# Desativa features que usam pipes extras do MDP
-persist.hwc.mdpcomp.enable=false
-persist.hwc.mdpcomp.maxpermixer=2
-debug.sf.disable_backpressure=1
-
-# --- Otimizacao de I/O para eMMC antigo ---
-# Evita que o sistema tente compilar tudo no boot (causa travamento de thread)
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=interpret-only
-pm.dexopt.install=interpret-only
-pm.dexopt.bg-dexopt=verify
-
-# Desativa analise de midia em segundo plano que trava o disco
-persist.sys.media.use_default_extractor=1
-
-
-# Desativa otimizacao agressiva de apps no boot
-pm.dexopt.install=verify
-pm.dexopt.ab-ota=verify
-pm.dexopt.inactive=verify
-pm.dexopt.shared=verify
-
-# Desativa o perfil de compilacao
-dalvik.vm.usejitprofiles=false
