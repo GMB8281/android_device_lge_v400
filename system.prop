@@ -32,7 +32,7 @@ ro.vendor.build.fingerprint=lge/e7wifi_open_com/e7wifi:4.4.2/KOT49I.A1403164001/
 ro.vendor.build.security_patch=2021-10-05
 
 # Desativa features que usam pipes extras do MDP
-persist.hwc.mdpcomp.enable=true
+persist.hwc.mdpcomp.enable=false
 persist.hwc.mdpcomp.maxpermixer=2
 debug.sf.disable_backpressure=1
 
