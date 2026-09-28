@@ -35,3 +35,13 @@ pm.dexopt.bg-dexopt=verify
 
 # Desativa analise de midia em segundo plano que trava o disco
 persist.sys.media.use_default_extractor=1
+
+
+# Desativa otimizacao agressiva de apps no boot
+pm.dexopt.install=verify
+pm.dexopt.ab-ota=verify
+pm.dexopt.inactive=verify
+pm.dexopt.shared=verify
+
+# Desativa o perfil de compilacao
+dalvik.vm.usejitprofiles=false
