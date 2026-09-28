@@ -1,6 +1,9 @@
 # No RIL
 ro.radio.noril=true
 
+# Desativa camera completamente
+config.disable_cameraservice=true
+
 # ==========================================
 # Otimizacoes para evitar crashes (1GB RAM)
 # ==========================================
