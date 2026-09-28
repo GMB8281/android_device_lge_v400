@@ -7,6 +7,10 @@ config.disable_cameraservice=true
 # Desativa AudioFx
 ro.audiofx.enabled=false
 
+# Desativa o watchdog (APENAS PARA DIAGNOSTICO)
+ro.build.watchdog.timeout=0
+persist.sys.watchdog_disabled=true
+
 # ==========================================
 # Otimizacoes para evitar crashes (1GB RAM)
 # ==========================================
