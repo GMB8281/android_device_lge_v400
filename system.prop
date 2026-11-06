@@ -1,2 +1,16 @@
 # No RIL
 ro.radio.noril=true
+
+# hwui
+ro.hwui.drop_shadow_cache_size=1
+ro.hwui.gradient_cache_size=0.2
+ro.hwui.layer_cache_size=6
+ro.hwui.path_cache_size=2
+ro.hwui.r_buffer_cache_size=1
+ro.hwui.texture_cache_size=8
+
+persist.sys.purgeable_assets=1
+ro.vold.umsdirtyratio=20
+
+# dex2oat
+dalvik.vm.dex2oat-Xmx=128m
